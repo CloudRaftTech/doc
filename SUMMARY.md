@@ -13,6 +13,7 @@
     * [2.VNC连接服务器](products/ecs/kvmnat/vnc.md)
     * [3.宝塔的安装](products/ecs/kvmnat/baota.md)
     * [4.使用CloudFlare建IPv4+v6站](products/ecs/kvmnat/cloudflare.md)
+    * [5.安装WINDOWS系统](products/ecs/kvmnat/5.-an-zhuang-windows-xi-tong.md)
 * [HPC-高性能计算服务器](products/hpc.md)
 * [PaaS-容器云平台](products/paas.md)
 * [SDS-科研数据集服务](products/sds.md)
