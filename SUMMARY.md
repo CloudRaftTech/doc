@@ -27,5 +27,5 @@
 
 ## 关于我们 <a id="about"></a>
 
-* [联系方式](about/contact.md)
+* [联系我们](about/contact.md)
 
