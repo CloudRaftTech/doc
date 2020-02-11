@@ -22,7 +22,7 @@
 
 * [隐私政策](agreements/privacy.md)
 * [产品使用条款](agreements/tos.md)
-* [产品推广协议](agreements/chan-pin-tui-guang-xie-yi.md)
+* [产品推广协议](agreements/aff.md)
 * [合理使用政策](agreements/aup.md)
 
 ## 关于我们 <a id="about"></a>
