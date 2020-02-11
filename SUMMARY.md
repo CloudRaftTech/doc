@@ -25,3 +25,7 @@
 * [产品推广协议](agreements/chan-pin-tui-guang-xie-yi.md)
 * [合理使用政策](agreements/aup.md)
 
+## 关于我们
+
+* [联系方式](guan-yu-wo-men/contact.md)
+
