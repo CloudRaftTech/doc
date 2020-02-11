@@ -4,7 +4,10 @@
 
 ## 产品介绍 <a id="products"></a>
 
-* [CDN-内容分发网络](products/cdn.md)
+* [CDN-内容分发网络](products/cdn/README.md)
+  * [百度云加速CDN（国内版）](products/cdn/baiducdn.md)
+  * [百度云加速CDN（海外版）](products/cdn/baiducdn-global.md)
+  * [CloudFlare CDN](products/cdn/cloudflare.md)
 * [CME-多语言云环境](products/cme.md)
 * [ECS-弹性云服务器](products/ecs/README.md)
   * [KVM-弹性云计算服务](products/ecs/kvm.md)
