@@ -6,7 +6,9 @@
 
 * [CDN-内容分发网络](products/cdn.md)
 * [CME-多语言云环境](products/cme.md)
-* [ECS-弹性云服务器](products/ecs.md)
+* [ECS-弹性云服务器](products/ecs/README.md)
+  * [KVM-弹性云计算服务](products/ecs/kvm.md)
+  * [KvmNAT-低价NAT服务器](products/ecs/kvmnat.md)
 * [HPC-高性能计算服务器](products/hpc.md)
 * [PaaS-容器云平台](products/paas.md)
 * [SDS-科研数据集服务](products/sds.md)
