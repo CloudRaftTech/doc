@@ -10,5 +10,15 @@
 
 登录成功后根据下图中的箭头和文字操作即可完成接入。
 
-![mnp1.png](https://iuimg.com/images/2020/02/04/mnp1.png) ![mCnf.png](https://iuimg.com/images/2020/02/04/mCnf.png) ![mVhu.png](https://iuimg.com/images/2020/02/04/mVhu.png) ![mqWj.png](https://iuimg.com/images/2020/02/04/mqWj.png)
+ 
+
+![mnp1.png](https://iuimg.com/images/2020/02/04/mnp1.png)
+
+![mCnf.png](https://iuimg.com/images/2020/02/04/mCnf.png)
+
+ 
+
+![mVhu.png](https://iuimg.com/images/2020/02/04/mVhu.png)
+
+![mqWj.png](https://iuimg.com/images/2020/02/04/mqWj.png)
 
