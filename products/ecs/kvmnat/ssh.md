@@ -30,5 +30,13 @@ Last login: Fri Jan 17 04:39:54 2020 from xxxxxxx
 
 如果可以连接，就可以进行下一步的工作了。
 
+#### 若连接失败
 
+这是由于公用IPv4被阻断造成的，请使用FinalShell内置的【海外服务器加速】功能。
+
+Windows版下载地址:  
+[http://www.hostbuf.com/downloads/finalshell\_install.exe](http://www.hostbuf.com/downloads/finalshell_install.exe)  
+  
+macOS版下载地址:  
+[http://www.hostbuf.com/downloads/finalshell\_install.pkg](http://www.hostbuf.com/downloads/finalshell_install.pkg)
 
