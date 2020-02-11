@@ -1,4 +1,4 @@
-# 购买与使用教程
+# 2.购买与使用教程
 
 产品购买链接：[https://www.cloudraft.cn/cart.php?gid=19](https://www.cloudraft.cn/cart.php?gid=19)
 

@@ -1,4 +1,4 @@
-# 购买与自助开通
+# 2.购买与自助开通
 
 注意：本服务与CloudFlare冲突，接入后域名需要在[https://su.baidu.com](https://su.baidu.com/?ic=bQcPI1)管理，不可在CloudFlare中管理。
 
