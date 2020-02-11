@@ -4,7 +4,7 @@
 
 ## 产品介绍 <a id="products"></a>
 
-* [CDN-内容分发网络](products/cdn/README.md)
+* [CDN-内容分发网络](products/cdn.md)
   * [百度云加速CDN（国内版）](products/cdn/baiducdn/README.md)
     * [简介](products/cdn/baiducdn/introduction.md)
     * [购买与自助开通](products/cdn/baiducdn/order.md)
@@ -14,12 +14,12 @@
   * [CloudFlare CDN](products/cdn/cloudflare/README.md)
     * [简介](products/cdn/cloudflare/introduction.md)
     * [购买与使用教程](products/cdn/cloudflare/quickstart.md)
-* [CME-多语言云环境](products/cme/README.md)
+* [CME-多语言云环境](products/cme.md)
   * [在线Rstudio服务](products/cme/rstudio.md)
   * [在线JupyterHub服务](products/cme/jupyter.md)
 * [ECS-弹性云服务器](products/ecs/README.md)
   * [KVM-弹性云计算服务](products/ecs/kvm.md)
-  * [KvmNAT-低价NAT服务器](products/ecs/kvmnat/README.md)
+  * [KvmNAT-低价NAT服务器](products/ecs/kvmnat.md)
     * [1.SSH连接服务器](products/ecs/kvmnat/ssh.md)
     * [2.VNC连接服务器](products/ecs/kvmnat/vnc.md)
     * [3.宝塔的安装](products/ecs/kvmnat/baota.md)
