@@ -2,7 +2,9 @@
 
 #### 注册CloudFlare
 
-首先需要注册CloudFlare账户：[https://www.cloudflare.com ](https://www.cloudflare.com)，如果有需要可以使用云筏提供的免费CloudFlarePartner：[https://cf.cloudraft.cn](https://cf.cloudraft.cn) 以及30元/年的CloudFlare Pro订阅：[https://www.cloudraft.cn/cart.php?gid=19](https://www.cloudraft.cn/cart.php?gid=19)
+首先需要注册CloudFlare账户：[https://www.cloudflare.com ](https://www.cloudflare.com)
+
+如果有需要可以使用云筏提供的免费CloudFlarePartner：[https://cf.cloudraft.cn](https://cf.cloudraft.cn) 以及30元/年的CloudFlare Pro订阅：[https://www.cloudraft.cn/cart.php?gid=19](https://www.cloudraft.cn/cart.php?gid=19)
 
 #### 宝塔设置监听IPv6
 
