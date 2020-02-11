@@ -10,15 +10,17 @@
 
 登录成功后根据下图中的箭头和文字操作即可完成接入。
 
- 
-
 ![mnp1.png](https://iuimg.com/images/2020/02/04/mnp1.png)
-
-![mCnf.png](https://iuimg.com/images/2020/02/04/mCnf.png)
-
- 
 
 ![mVhu.png](https://iuimg.com/images/2020/02/04/mVhu.png)
 
-![mqWj.png](https://iuimg.com/images/2020/02/04/mqWj.png)
+![mCnf.png](https://iuimg.com/images/2020/02/04/mCnf.png)
+
+登录到CloudFlare官网，查看是否从免费的3条变为了30条，如果是的则说明接入成功。
+
+![](../../../.gitbook/assets/image%20%283%29.png)
+
+接入成功后即可关闭Plesk面板，使用CloudFlare Partner和CloudFlare官网进行域名的管理。
+
+ 
 
