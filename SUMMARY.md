@@ -29,6 +29,7 @@
     * [常见问题](products/ecs/kvmnat/faq/README.md)
       * [无法解析域名\|Name or service not known](products/ecs/kvmnat/faq/ipv6-dns.md)
       * [IPv4/IPv6 SSH无法连接](products/ecs/kvmnat/faq/ip-blocked.md)
+      * [WebVNC无法连接](products/ecs/kvmnat/faq/webvnc.md)
 * [HPC-高性能计算服务器](products/hpc.md)
 * [PaaS-容器云平台](products/paas.md)
   * [计费标准](products/paas/price.md)
