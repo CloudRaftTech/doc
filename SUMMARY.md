@@ -31,6 +31,7 @@
       * [IPv4/IPv6 SSH无法连接](products/ecs/kvmnat/faq/ip-blocked.md)
       * [WebVNC无法连接](products/ecs/kvmnat/faq/webvnc.md)
       * [安装BBR/锐速后IO很低、网速很慢](products/ecs/kvmnat/faq/netspeed-io.md)
+      * [网络是否有限制](products/ecs/kvmnat/faq/net-limit.md)
 * [HPC-高性能计算服务器](products/hpc.md)
 * [PaaS-容器云平台](products/paas.md)
   * [计费标准](products/paas/price.md)
