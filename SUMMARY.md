@@ -29,7 +29,8 @@
     * [常见问题](products/ecs/kvmnat/faq/README.md)
       * [无法解析域名\|Name or service not known](products/ecs/kvmnat/faq/ipv6-dns.md)
 * [HPC-高性能计算服务器](products/hpc.md)
-* [PaaS-容器云平台](products/paas.md)
+* [PaaS-容器云平台](products/paas/README.md)
+  * [计费标准](products/paas/price.md)
 * [SDS-科研数据集服务](products/sds.md)
 
 ## 解决方案 <a id="solutions"></a>
