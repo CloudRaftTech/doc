@@ -32,6 +32,7 @@
       * [WebVNC无法连接](products/ecs/kvmnat/faq/webvnc.md)
       * [安装BBR/锐速后IO很低、网速很慢](products/ecs/kvmnat/faq/netspeed-io.md)
       * [网络/CPU是否有限制](products/ecs/kvmnat/faq/limit.md)
+      * [IPv4的UDP连接异常](products/ecs/kvmnat/faq/ipv4-block-udp.md)
 * [HPC-高性能计算服务器](products/hpc.md)
 * [PaaS-容器云平台](products/paas/README.md)
   * [计费标准](products/paas/price.md)
