@@ -24,7 +24,7 @@
     * [1.SSH连接服务器](products/ecs/kvmnat/ssh.md)
     * [2.VNC连接服务器](products/ecs/kvmnat/vnc.md)
     * [3.宝塔的安装](products/ecs/kvmnat/baota.md)
-    * [4.使用CloudFlare建IPv4+v6站](products/ecs/kvmnat/cloudflare.md)
+    * [4.CloudFlare建站及转发IPv4+v6端口](products/ecs/kvmnat/cloudflare.md)
     * [5.安装WINDOWS系统](products/ecs/kvmnat/windows.md)
     * [常见问题](products/ecs/kvmnat/faq/README.md)
       * [无法解析域名\|Name or service not known](products/ecs/kvmnat/faq/ipv6-dns.md)
