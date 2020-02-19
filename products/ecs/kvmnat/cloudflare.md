@@ -39,7 +39,7 @@ HTTPS ports supported by Cloudflare:
 8443
 ```
 
-这些端口都是可以被CloudFlare转发的，具体玩法欢迎加入QQ群互相讨论
+这些端口都是可以被CloudFlare转发的，具体玩法请参考本章的【高阶玩法】内容。另外欢迎加入QQ群互相讨论
 
 * [官方QQ群](https://jq.qq.com/?_wv=1027&k=5G3Fzrs): 519447973
 

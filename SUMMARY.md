@@ -38,6 +38,8 @@
       * [IPv4的UDP连接异常](products/ecs/kvmnat/faq/ipv4-block-udp.md)
       * [宝塔安装失败](products/ecs/kvmnat/faq/bt-install-failed.md)
       * [DD系统后面板无法修改密码/重启/重装系统](products/ecs/kvmnat/faq/dd-system.md)
+    * [高阶玩法](products/ecs/kvmnat/advanced/README.md)
+      * [结合CloudFlare实现多端口IPv4+6访问](products/ecs/kvmnat/advanced/nat-cf-adv.md)
 * [HPC-高性能计算服务器](products/hpc.md)
 * [PaaS-容器云平台](products/paas/README.md)
   * [简介](products/paas/introduction.md)
