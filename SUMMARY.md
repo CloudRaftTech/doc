@@ -12,6 +12,7 @@
   * [百度云加速CDN（海外版）](products/cdn/baiducdn-global/README.md)
     * [1.简介](products/cdn/baiducdn-global/introduction.md)
     * [2.购买与自助开通](products/cdn/baiducdn-global/order.md)
+    * [3.产品使用](products/cdn/baiducdn-global/usage.md)
   * [CloudFlare CDN](products/cdn/cloudflare/README.md)
     * [1.简介](products/cdn/cloudflare/introduction.md)
     * [2.购买与使用教程](products/cdn/cloudflare/quickstart.md)
