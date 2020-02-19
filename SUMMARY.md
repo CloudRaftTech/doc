@@ -8,6 +8,7 @@
   * [百度云加速CDN（国内版）](products/cdn/baiducdn/README.md)
     * [1.简介](products/cdn/baiducdn/introduction.md)
     * [2.购买与自助开通](products/cdn/baiducdn/order.md)
+    * [3.产品使用](products/cdn/baiducdn/usage.md)
   * [百度云加速CDN（海外版）](products/cdn/baiducdn-global/README.md)
     * [1.简介](products/cdn/baiducdn-global/introduction.md)
     * [2.购买与自助开通](products/cdn/baiducdn-global/order.md)
