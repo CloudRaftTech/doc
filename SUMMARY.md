@@ -57,6 +57,7 @@
 * [SDS-科研数据集服务](products/sds/README.md)
   * [NOAA全球气象数据镜像](products/sds/noaa/README.md)
     * [简介](products/sds/noaa/introduction.md)
+    * [根据坐标查询气象站点WBAN/USAF编号](products/sds/noaa/station-info.md)
   * [NCBI-GEO基因表达数据镜像](products/sds/ncbi-geo.md)
   * [全球癌症登记数据集](products/sds/cancer-reg.md)
 
