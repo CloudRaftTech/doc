@@ -8,7 +8,9 @@
 
 如果您的本地网络有IPv6环境，那么只需使用IPv6连接服务器即可。对于本地没有IPv6的人来说，这个NAT服务器还需要一些额外配置才能和普通的IPv4服务器一样使用。
 
-由于进行IPv4端口转发的的公网IP是可能发生变动的，因此以公告为准，本例中是：nat-eu-2.cloudraft.cn
+由于进行IPv4端口转发的的公网IP是可能发生变动的，因此以查询为准，本例中是：nat-eu-2.cloudraft.cn
+
+**查询页面**：[https://tools.cloudraft.cn/nat-port.php](https://tools.cloudraft.cn/nat-port.php) 输入自己的内网ip（172.xx.xxx.xxx）即可。
 
 #### 计算端口号
 
