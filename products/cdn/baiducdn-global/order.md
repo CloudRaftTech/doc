@@ -8,7 +8,7 @@
 
 3. 在系统中下单：[https://www.cloudraft.cn/cart.php?gid=5](https://www.cloudraft.cn/cart.php?gid=5) 下单时需要填写【域名】+【接入方式】+【用户识别码】（获取方式见2）。
 
-4. 支付：直接支付（自动开通） 或 淘宝（人工开通）：[https://item.taobao.com/item.htm?id=596127190618 ](https://item.taobao.com/item.htm?id=596127190618%20)
+4. 支付：直接支付（自动开通） 或 淘宝（人工开通）：[https://item.taobao.com/item.htm?id=596127190618](https://item.taobao.com/item.htm?id=596127190618)
 
 5. 在系统中付款完成后系统自动完成开通，请退出账号再登录，在【我的网站】-【分配】选项卡中即可看到绑定域名信息，根据提示操作接入。
 
