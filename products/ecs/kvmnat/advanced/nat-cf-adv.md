@@ -26,7 +26,7 @@ HTTPS ports supported by Cloudflare:
 
 然后我们去CloudFlare控制面板中，添加AAAA解析，例如这里将cloudraft-nat-test.liujason.com解析到小鸡的IPv6上，记得开启加速功能（点亮橙色的云）：
 
-![](../../../../.gitbook/assets/image%20%289%29.png)
+![](../../../../.gitbook/assets/image%20%2810%29.png)
 
 然后在宝塔中开启【监听IPv6】功能的前提下，开启【面板SSL】，这里使用自签名证书。
 
@@ -34,13 +34,13 @@ HTTPS ports supported by Cloudflare:
 
 提交后通过https重新访问面板，如果出现安全提示，请选择【继续访问】，如图：
 
-![](../../../../.gitbook/assets/image%20%284%29.png)
+![](../../../../.gitbook/assets/image%20%285%29.png)
 
 然后还是在宝塔面板设置里面修改【面板端口】，改为8443（或者前面提到的任意一个支持https的端口）。
 
-![](../../../../.gitbook/assets/image%20%287%29.png)
+![](../../../../.gitbook/assets/image%20%288%29.png)
 
 修改成功后，即可通过 https://域名:8443的方式在IPv4条件下访问宝塔面板了，例如这里可以通过https://cloudraft-nat-test.liujason.com:8443来访问。
 
-![](../../../../.gitbook/assets/image%20%2811%29.png)
+![](../../../../.gitbook/assets/image%20%2812%29.png)
 

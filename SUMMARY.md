@@ -18,6 +18,8 @@
     * [2.购买与使用教程](products/cdn/cloudflare/quickstart.md)
     * [3.使用CloudFlare Partner管理DNS](products/cdn/cloudflare/cfp.md)
     * [4.修改域名](products/cdn/cloudflare/change-domain.md)
+    * [5.常见问题](products/cdn/cloudflare/faq/README.md)
+      * [下单时提示“域名无效”](products/cdn/cloudflare/faq/cant-add-domain.md)
 * [CME-多语言云环境](products/cme/README.md)
   * [在线Rstudio服务](products/cme/rstudio.md)
   * [在线JupyterHub服务](products/cme/jupyter.md)
