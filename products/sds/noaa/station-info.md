@@ -8,7 +8,7 @@
 
 我们也将站点信息录入数据库，在这里可以查询（[https://clidb.org/search/station.html](https://faq.cloud.ac.cn/home/leaving?target=https%3A%2F%2Fclidb.org%2Fsearch%2Fstation.html)），站点列表的更新年份为2019，一般不会有大变化。在查询的时候要注意，年份不能大于2019。
 
-![](../../../.gitbook/assets/image%20%2814%29.png)
+![](../../../.gitbook/assets/image%20%2815%29.png)
 
 查询完成后，根据USAF和WBAN号在NOAA查询相应数据即可。
 
