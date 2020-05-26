@@ -11,7 +11,7 @@
 
 详细功能列表：
 
-![](../../../.gitbook/assets/image%20%282%29.png)
+![](../../../.gitbook/assets/image%20%281%29%20%281%29.png)
 
 域名完成接入后，除DNS外的所有功能均可在CloudFlare官网（https://dash.cloudflare.com）登录用户账号进行管理。DNS可以使用任意CloudFlare Partner进行管理，如：[https://cf.cloudraft.cn](https://cf.cloudraft.cn) 。详细教程见本产品文档【3.使用云筏CloudFlare Partner管理DNS】）。
 

@@ -60,6 +60,7 @@
   * [NOAA全球气象数据镜像](products/sds/noaa/README.md)
     * [简介](products/sds/noaa/introduction.md)
     * [根据坐标查询气象站点WBAN/USAF编号](products/sds/noaa/station-info.md)
+    * [根据WBAN/USAF编号查询逐小时数据](products/sds/noaa/gen-ju-wbanusaf-bian-hao-cha-xun-zhu-xiao-shi-shu-ju.md)
   * [NCBI-GEO基因表达数据镜像](products/sds/ncbi-geo.md)
   * [全球癌症登记数据集](products/sds/cancer-reg.md)
 
