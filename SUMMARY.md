@@ -60,8 +60,8 @@
   * [NOAA全球气象数据镜像](products/sds/noaa/README.md)
     * [简介](products/sds/noaa/introduction.md)
     * [根据坐标查询气象站点WBAN/USAF编号](products/sds/noaa/station-info.md)
-    * [下载全球逐小时气象数据](products/sds/noaa/gen-ju-wbanusaf-bian-hao-cha-xun-zhu-xiao-shi-shu-ju.md)
-    * [下载全球日均气象数据](products/sds/noaa/xia-zai-quan-qiu-ri-jun-qi-xiang-shu-ju.md)
+    * [下载全球逐小时气象数据](products/sds/noaa/noaa-hourly.md)
+    * [下载全球日均气象数据](products/sds/noaa/gsod-daily.md)
   * [NCBI-GEO基因表达数据镜像](products/sds/ncbi-geo.md)
   * [全球癌症登记数据集](products/sds/cancer-reg.md)
 
