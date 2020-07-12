@@ -25,6 +25,8 @@
   * [在线JupyterHub服务](products/cme/jupyter.md)
 * [ECS-弹性云服务器](products/ecs/README.md)
   * [KVM-弹性云计算服务](products/ecs/kvm.md)
+  * [NAT服务器](products/ecs/nat-server/README.md)
+    * [1.开启并获取IPv6地址](products/ecs/nat-server/nat-ipv6.md)
   * [KvmNAT-低价NAT服务器](products/ecs/kvmnat/README.md)
     * [1.SSH连接服务器](products/ecs/kvmnat/ssh.md)
     * [2.VNC连接服务器](products/ecs/kvmnat/vnc.md)
