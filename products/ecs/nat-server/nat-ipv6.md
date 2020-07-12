@@ -90,7 +90,15 @@ ping6测试google的ipv6站点是否能通
 有些镜像是禁用了IPv6功能的，因此需要开启。首先查看一下是否被禁用了：
 
 ```text
-root@HIzcND1000044:~# sysctl -a | grep ipv6.*disablesysctl: reading key "net.ipv6.conf.all.stable_secret"net.ipv6.conf.all.disable_ipv6 = 1sysctl: reading key "net.ipv6.conf.default.stable_secret"net.ipv6.conf.default.disable_ipv6 = 1sysctl: reading key "net.ipv6.conf.eth0.stable_secret"net.ipv6.conf.eth0.disable_ipv6 = 1sysctl: reading key "net.ipv6.conf.lo.stable_secret"net.ipv6.conf.lo.disable_ipv6 = 1
+root@HIzcND1000044:~# sysctl -a | grep ipv6.*disable
+sysctl: reading key "net.ipv6.conf.all.stable_secret"
+net.ipv6.conf.all.disable_ipv6 = 1
+sysctl: reading key "net.ipv6.conf.default.stable_secret"
+net.ipv6.conf.default.disable_ipv6 = 1
+sysctl: reading key "net.ipv6.conf.eth0.stable_secret"
+net.ipv6.conf.eth0.disable_ipv6 = 1
+sysctl: reading key "net.ipv6.conf.lo.stable_secret"
+net.ipv6.conf.lo.disable_ipv6 = 1
 ```
 
 disable=1说明被禁用了，因此需要去修改，配置文件为`/etc/sysctl.conf`
@@ -98,6 +106,21 @@ disable=1说明被禁用了，因此需要去修改，配置文件为`/etc/sysct
 ```text
 vi /etc/sysctl.conf
 #把ipv6 disable的参数都改为0，然后保存，重载服务后生效
+root@HIzcND1000044:~# sysctl -p
+vm.swappiness = 0
+net.ipv4.neigh.default.gc_stale_time = 120
+net.ipv4.conf.all.rp_filter = 0
+net.ipv4.conf.default.rp_filter = 0
+net.ipv4.conf.default.arp_announce = 2
+net.ipv4.conf.lo.arp_announce = 2
+net.ipv4.conf.all.arp_announce = 2
+net.ipv4.tcp_max_tw_buckets = 5000
+net.ipv4.tcp_syncookies = 1
+net.ipv4.tcp_max_syn_backlog = 1024
+net.ipv4.tcp_synack_retries = 2
+net.ipv6.conf.all.disable_ipv6 = 0
+net.ipv6.conf.default.disable_ipv6 = 0
+net.ipv6.conf.lo.disable_ipv6 = 0
 ```
 
 ### 设置网卡，启用DHCP
@@ -109,7 +132,23 @@ nano /etc/network/interfaces
 添加一行`iface eth0 inet6 dhcp`，举例示意：
 
 ```text
-# This file describes the network interfaces available on your system# and how to activate them. For more information, see interfaces(5). source /etc/network/interfaces.d/* # The loopback network interfaceauto loiface lo inet loopback # The primary network interfaceauto eth0iface eth0 inet staticaddress 172.16.2.Xnetmask 255.240.0.0gateway 172.16.2.1 iface eth0 inet6 dhcp
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto eth0
+iface eth0 inet static
+address 172.16.2.X
+netmask 255.240.0.0
+gateway 172.16.2.1
+
+iface eth0 inet6 dhcp
 ```
 
 重启网络，检查是否正常
