@@ -11,13 +11,36 @@
 有些镜像是禁用了IPv6功能的，因此需要开启。首先查看一下是否被禁用了：
 
 ```text
-[root@hSxavP1000044 network-scripts]# sysctl -a | grep ipv6.*disablesysctl: reading key "net.ipv6.conf.all.stable_secret"net.ipv6.conf.all.disable_ipv6 = 1sysctl: net.ipv6.conf.default.disable_ipv6 = 1reading key "net.ipv6.conf.default.stable_secret"sysctl: reading key "net.ipv6.conf.eth0.stable_secret"net.ipv6.conf.eth0.disable_ipv6 = 1sysctl: reading key "net.ipv6.conf.lo.stable_secret"net.ipv6.conf.lo.disable_ipv6 = 1
+[root@hSxavP1000044 network-scripts]# sysctl -a | grep ipv6.*disable
+sysctl: reading key "net.ipv6.conf.all.stable_secret"
+net.ipv6.conf.all.disable_ipv6 = 1
+sysctl: net.ipv6.conf.default.disable_ipv6 = 1
+reading key "net.ipv6.conf.default.stable_secret"
+sysctl: reading key "net.ipv6.conf.eth0.stable_secret"
+net.ipv6.conf.eth0.disable_ipv6 = 1
+sysctl: reading key "net.ipv6.conf.lo.stable_secret"
+net.ipv6.conf.lo.disable_ipv6 = 1
 ```
 
 disable=1说明被禁用了，因此需要去修改，配置文件为`/etc/sysctl.conf`
 
 ```text
-vi /etc/sysctl.conf#把ipv6 disable的参数都改为0，然后保存，重载服务后生效[root@hSxavP1000044 ~]# sysctl -pvm.swappiness = 0net.ipv4.neigh.default.gc_stale_time = 120net.ipv4.conf.all.rp_filter = 0net.ipv4.conf.default.rp_filter = 0net.ipv4.conf.default.arp_announce = 2net.ipv4.conf.lo.arp_announce = 2net.ipv4.conf.all.arp_announce = 2net.ipv4.tcp_max_tw_buckets = 5000net.ipv4.tcp_syncookies = 1net.ipv4.tcp_max_syn_backlog = 1024net.ipv4.tcp_synack_retries = 2net.ipv6.conf.all.disable_ipv6 = 0net.ipv6.conf.default.disable_ipv6 = 0net.ipv6.conf.lo.disable_ipv6 = 0
+vi /etc/sysctl.conf
+#把ipv6 disable的参数都改为0，然后保存，重载服务后生效
+[root@hSxavP1000044 ~]# sysctl -pvm.swappiness = 0
+net.ipv4.neigh.default.gc_stale_time = 120
+net.ipv4.conf.all.rp_filter = 0
+net.ipv4.conf.default.rp_filter = 0
+net.ipv4.conf.default.arp_announce = 2
+net.ipv4.conf.lo.arp_announce = 2
+net.ipv4.conf.all.arp_announce = 2
+net.ipv4.tcp_max_tw_buckets = 5000
+net.ipv4.tcp_syncookies = 1
+net.ipv4.tcp_max_syn_backlog = 1024
+net.ipv4.tcp_synack_retries = 2
+net.ipv6.conf.all.disable_ipv6 = 0
+net.ipv6.conf.default.disable_ipv6 = 0
+net.ipv6.conf.lo.disable_ipv6 = 0
 ```
 
 ### 设置网卡，启用DHCP
@@ -73,7 +96,8 @@ root@HIzcND1000044:~# sysctl -a | grep ipv6.*disablesysctl: reading key "net.ipv
 disable=1说明被禁用了，因此需要去修改，配置文件为`/etc/sysctl.conf`
 
 ```text
-vi /etc/sysctl.conf#把ipv6 disable的参数都改为0，然后保存，重载服务后生效[root@hSxavP1000044 ~]# sysctl -proot@HIzcND1000044:~# sysctl -pvm.swappiness = 0net.ipv4.neigh.default.gc_stale_time = 120net.ipv4.conf.all.rp_filter = 0net.ipv4.conf.default.rp_filter = 0net.ipv4.conf.default.arp_announce = 2net.ipv4.conf.lo.arp_announce = 2net.ipv4.conf.all.arp_announce = 2net.ipv4.tcp_max_tw_buckets = 5000net.ipv4.tcp_syncookies = 1net.ipv4.tcp_max_syn_backlog = 1024net.ipv4.tcp_synack_retries = 2net.ipv6.conf.all.disable_ipv6 = 0net.ipv6.conf.default.disable_ipv6 = 0net.ipv6.conf.lo.disable_ipv6 = 0
+vi /etc/sysctl.conf
+#把ipv6 disable的参数都改为0，然后保存，重载服务后生效
 ```
 
 ### 设置网卡，启用DHCP
