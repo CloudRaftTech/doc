@@ -54,7 +54,9 @@ vi /etc/sysconfig/network-scripts/ifcfg-eth0
 在原有配置后面增加输入以下信息：
 
 ```text
-Networking_IPV6=yesDHCPV6C=yesIPV6INIT=yes
+Networking_IPV6=yes
+DHCPV6C=yes
+IPV6INIT=yes
 ```
 
 然后重启网络：
@@ -66,19 +68,43 @@ service network restart
 ### 检查是否生效
 
 ```text
-[root@hSxavP1000044 network-scripts]# ip addr1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00    inet 127.0.0.1/8 scope host lo       valid_lft forever preferred_lft forever    inet6 ::1/128 scope host        valid_lft forever preferred_lft forever2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000    link/ether 00:15:5d:1a:f7:05 brd ff:ff:ff:ff:ff:ff    inet 172.16.2.7/12 brd 172.31.255.255 scope global eth0       valid_lft forever preferred_lft forever    inet6 2a01:4f8:212:1234:215:5dff:fe1a:f705/64 scope global mngtmpaddr dynamic        valid_lft 2591920sec preferred_lft 604720sec    inet6 fe80::215:5dff:fe1a:f705/64 scope link        valid_lft forever preferred_lft forever
+[root@hSxavP1000044 network-scripts]# ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+	link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+	inet 127.0.0.1/8 scope host lo
+	   valid_lft forever preferred_lft forever
+	inet6 ::1/128 scope host 
+	   valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+	link/ether 00:15:5d:1a:f7:05 brd ff:ff:ff:ff:ff:ff
+	inet 172.16.2.7/12 brd 172.31.255.255 scope global eth0
+	   valid_lft forever preferred_lft forever
+	inet6 2a01:4f8:212:1234:215:5dff:fe1a:f705/64 scope global mngtmpaddr dynamic 
+	   valid_lft 2591920sec preferred_lft 604720sec
+	inet6 fe80::215:5dff:fe1a:f705/64 scope link 
+	   valid_lft forever preferred_lft forever
 ```
 
 注意看eth0的网卡中ipv6地址是否被分配
 
 ```text
-[root@hSxavP1000044 network-scripts]# ping6 ipv6.google.comPING ipv6.google.com(yw-in-x66.1e100.net (2607:f8b0:4002:c05::66)) 56 data bytes64 bytes from yw-in-x66.1e100.net (2607:f8b0:4002:c05::66): icmp_seq=1 ttl=103 time=107 ms64 bytes from yw-in-x66.1e100.net (2607:f8b0:4002:c05::66): icmp_seq=2 ttl=103 time=107 ms^C--- ipv6.google.com ping statistics ---2 packets transmitted, 2 received, 0% packet loss, time 1002msrtt min/avg/max/mdev = 107.212/107.398/107.584/0.186 ms
+[root@hSxavP1000044 network-scripts]# ping6 ipv6.google.com
+PING ipv6.google.com(yw-in-x66.1e100.net (2607:f8b0:4002:c05::66)) 56 data bytes
+64 bytes from yw-in-x66.1e100.net (2607:f8b0:4002:c05::66): icmp_seq=1 ttl=103 time=107 ms
+64 bytes from yw-in-x66.1e100.net (2607:f8b0:4002:c05::66): icmp_seq=2 ttl=103 time=107 ms
+^C
+--- ipv6.google.com ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 107.212/107.398/107.584/0.186 ms
 ```
 
 ping6测试google的ipv6站点是否能通
 
 ```text
-[root@hSxavP1000044 network-scripts]# ip -6 route2a01:4f8:212:1234::/64 dev eth0 proto kernel metric 256 expires 2591804sec pref mediumfe80::/64 dev eth0 proto kernel metric 256 pref mediumdefault via fe80::24b9:6e08:f5fd:b36f dev eth0 proto ra metric 1024 expires 1604sec pref medium
+[root@hSxavP1000044 network-scripts]# ip -6 route
+2a01:4f8:212:1234::/64 dev eth0 proto kernel metric 256 expires 2591804sec pref medium
+fe80::/64 dev eth0 proto kernel metric 256 pref medium
+default via fe80::24b9:6e08:f5fd:b36f dev eth0 proto ra metric 1024 expires 1604sec pref medium
 ```
 
 查看ipv6路由表
@@ -156,4 +182,33 @@ iface eth0 inet6 dhcp
 ```text
 service networking restart
 ```
+
+## 设置静态IPv6（可选）
+
+### CentOS
+
+修改/etc/sysconfig/network-scripts/ifcfg-eth0，将DHCPV6C=yes删除，并写入IPv6相关信息：
+
+```text
+IPV6ADDR=【你的IPv6地址】/64
+IPV6_DEFAULTGW=【IPv6网关】
+```
+
+### Debian
+
+修改/etc/network/interfaces，将dhcp改为static，并写入IPv6相关信息：
+
+```text
+iface eth1 inet6 static
+        address 【你的IPv6地址】
+        netmask 64
+        gateway 【IPv6网关】
+```
+
+### IPv6信息获取
+
+* IPv6地址为ip addr中查询到的地址，本例中是2a01:4f8:212:1234:215:5dff:fe1a:f705；
+* IPv6网关是同网段的/64第一个IP，本例中是2a01:4f8:212:1234::1
+
+
 
