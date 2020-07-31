@@ -27,7 +27,8 @@ disable=1说明被禁用了，因此需要去修改，配置文件为`/etc/sysct
 ```text
 vi /etc/sysctl.conf
 #把ipv6 disable的参数都改为0，然后保存，重载服务后生效
-[root@hSxavP1000044 ~]# sysctl -pvm.swappiness = 0
+[root@hSxavP1000044 ~]# sysctl -p
+vm.swappiness = 0
 net.ipv4.neigh.default.gc_stale_time = 120
 net.ipv4.conf.all.rp_filter = 0
 net.ipv4.conf.default.rp_filter = 0
